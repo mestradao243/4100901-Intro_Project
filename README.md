@@ -11,9 +11,19 @@
 **Objetivo:** Implementar un sistema muy simple que responda a eventos (pulsación de un botón) y se comunique con un PC, utilizando herramientas estándar de la industria como VS Code, STM32CubeMX y la librería HAL (Hardware Abstraction Layer) de STMicroelectronics.
 
 **¿Por qué este enfoque?**
-Comenzaremos con un enfoque práctico y guiado, utilizando herramientas que abstraen parte de la complejidad del hardware (HAL, CubeMX). Esto te permitirá tener un sistema funcionando rápidamente. A medida que avance el curso, profundizaremos en *cómo* funciona este sistema a bajo nivel: exploraremos la arquitectura del procesador ARM Cortex-M4, cómo se controlan los periféricos directamente (acceso a registros), la compilación de C a ensamblador y los principios de diseño de firmware eficiente. Esta práctica inicial sienta las bases para entender el proyecto final del curso, que será una versión más completa de este sistema de control.
+
+Comenzaremos con un enfoque práctico y guiado, utilizando herramientas que abstraen parte de la complejidad del hardware (HAL, CubeMX). Esto te permitirá tener un sistema funcionando rápidamente.
+
+A medida que avance el curso, profundizaremos en *cómo* funciona este sistema a bajo nivel: 
+  - exploraremos la arquitectura del procesador (ARM Cortex-M4), 
+  - cómo se controlan los periféricos directamente (acceso a registros), 
+  - la compilación de C a ensamblador, 
+  - y los principios de diseño de firmware eficiente.
+
+Esta práctica inicial sienta las bases para entender el proyecto final del curso, que será una versión más completa de este sistema de control.
 
 **Funcionalidad de esta Práctica:**
+
 *   Hacer parpadear un LED integrado (LD2) como señal de "heartbeat" (el sistema está vivo).
 *   Detectar la pulsación del botón de usuario integrado (B1).
 *   Encender un LED externo durante 3 segundos cuando se presiona el botón B1 (simulando un desbloqueo temporal).
@@ -24,7 +34,7 @@ Comenzaremos con un enfoque práctico y guiado, utilizando herramientas que abst
 
 ![HW Diagram](Doc/assets/hw_diagram.png)
 
-**Documentación:**
+**Documentación de la Placa:**
 
 *  [NUCLEO-L476RG](https://www.st.com/en/evaluation-tools/nucleo-l476rg.html).
 *  [STM32 Nucleo-64 Boards](https://www.st.com/resource/en/user_manual/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf).
